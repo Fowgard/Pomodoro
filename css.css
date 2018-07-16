@@ -1,0 +1,67 @@
+#Display {
+  font-size:70px;
+  color: red;
+  font-style: Arial;
+  background: black;
+  text-align:center;
+  margin-top: 20px;
+}
+
+#Status {
+  font-size:35px;
+  font-style:Arial;
+  color:red;
+}
+
+#Container{
+  height:150px;
+  width:400px;
+  background: black;
+  color: red;
+  border-style:solid;
+  border-radius:10px;
+  text-align:center;
+ 
+}
+
+
+button {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  margin-top:10px;
+  border-radius:3px;
+    position: relative;
+    background-color: #8c8688;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: "";
+    background: #0dba1e;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
